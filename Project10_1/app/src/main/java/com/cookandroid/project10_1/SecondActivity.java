@@ -26,4 +26,16 @@ public class SecondActivity extends Activity {
             }
         });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        android.util.Log.i("ActivityTest", "SecondActivity onResume()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        android.util.Log.i("ActivityTest", "SecondActivity onPause()");
+    }
 }
